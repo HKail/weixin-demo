@@ -14,8 +14,8 @@ const Token = "coleliedev"
 func main() {
 	router := gin.Default()
 
-	router.GET("/", WXCheckSignature)
-	router.POST("/", WXMsgReceive)
+	router.GET("/wx", WXCheckSignature)
+	router.POST("/wx", WXMsgReceive)
 
 	log.Fatalln(router.Run(":80"))
 }

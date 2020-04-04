@@ -17,7 +17,7 @@ func main() {
 	router.GET("/wx", WXCheckSignature)
 	router.POST("/wx", WXMsgReceive)
 
-	log.Fatalln(router.Run(":80"))
+	log.Fatalln(router.Run(":8002"))
 }
 
 // WXCheckSignature 微信接入校验

@@ -75,8 +75,8 @@ type WXRepTextMsg struct {
 // WXMsgReply 微信消息回复
 func WXMsgReply(c *gin.Context, fromUser, toUser string) {
 	repTextMsg := WXRepTextMsg{
-		ToUserName:   fromUser,
-		FromUserName: toUser,
+		ToUserName:   toUser,
+		FromUserName: fromUser,
 		CreateTime:   time.Now().Unix(),
 		MsgType:      "text",
 		Content:      fmt.Sprintf("[消息回复] - %s", time.Now().Format("2006-01-02 15:04:05")),

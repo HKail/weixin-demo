@@ -11,6 +11,6 @@ git clone https://github.com/hkail/weixin-demo
 
 cd weixin-demo
 
-# 使用前注意修改main.go文件中的Token参数的值
+# 使用前注意修改 main.go 文件中的 Token 参数的值
 go run main.go
 ```
